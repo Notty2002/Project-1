@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-             sh 'docker run -d -p 3000:3000 --name nileshproject1 project1'
+             sh 'docker run -d -p 3000:3000 --name project1 nileshproject1'
             }
         }
     }
