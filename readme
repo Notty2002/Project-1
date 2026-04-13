@@ -17,3 +17,10 @@ This project demonstrates a complete CI/CD pipeline using Jenkins, Docker, and A
 
 ## 🐳 Docker
 - Dockerfile used to containerize Node.js app
+
+## ⚙️ Jenkins
+- Jenkinsfile automates build and deployment
+
+## 🚀 Deployment
+- Application deployed on AWS EC2 instance
+
