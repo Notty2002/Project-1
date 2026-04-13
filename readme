@@ -1,26 +1,46 @@
-# 🚀 DevOps CI/CD Project (Node.js + Docker + Jenkins)
+# 🚀 DevOps CI/CD Pipeline Project (Node.js + Docker + Jenkins)
 
 ## 📌 Overview
-This project demonstrates a complete CI/CD pipeline using Jenkins, Docker, and AWS.
+This project demonstrates an end-to-end DevOps CI/CD pipeline using Jenkins, Docker, and AWS. It automates the process of building, containerizing, and deploying a Node.js application to ensure faster and reliable delivery.
+
+---
 
 ## 🛠️ Tech Stack
-- Node.js Application
-- Docker
-- Jenkins
-- AWS EC2
+- Node.js (Application)
+- Docker (Containerization)
+- Jenkins (CI/CD Automation)
+- AWS EC2 (Deployment)
+- GitHub (Version Control)
 
-## 🔄 CI/CD Pipeline Flow
-1. Code pushed to GitHub
-2. Jenkins pulls code
-3. Docker image is built
-4. Container is deployed
+---
 
-## 🐳 Docker
-- Dockerfile used to containerize Node.js app
+## 🔄 CI/CD Pipeline Workflow
 
-## ⚙️ Jenkins
-- Jenkinsfile automates build and deployment
+1. Developer pushes code to GitHub  
+2. Jenkins triggers pipeline automatically  
+3. Jenkins pulls latest code  
+4. Docker image is built using Dockerfile  
+5. Container is deployed on server  
+6. Application becomes accessible  
 
-## 🚀 Deployment
-- Application deployed on AWS EC2 instance
+---
 
+## ⚙️ Jenkins Pipeline
+
+The pipeline is defined using a **Jenkinsfile** and performs:
+
+- Code checkout from GitHub  
+- Build process automation  
+- Docker image creation  
+- Container deployment  
+
+---
+
+## 🐳 Docker Implementation
+
+Docker is used to containerize the Node.js application, ensuring consistency across environments.
+
+### Commands Used:
+```bash
+docker build -t node-app .
+docker run -d -p 3000:3000 node-app
