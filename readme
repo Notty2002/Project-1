@@ -1,0 +1,19 @@
+# 🚀 DevOps CI/CD Project (Node.js + Docker + Jenkins)
+
+## 📌 Overview
+This project demonstrates a complete CI/CD pipeline using Jenkins, Docker, and AWS.
+
+## 🛠️ Tech Stack
+- Node.js Application
+- Docker
+- Jenkins
+- AWS EC2
+
+## 🔄 CI/CD Pipeline Flow
+1. Code pushed to GitHub
+2. Jenkins pulls code
+3. Docker image is built
+4. Container is deployed
+
+## 🐳 Docker
+- Dockerfile used to containerize Node.js app
